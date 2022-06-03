@@ -8,10 +8,9 @@
     <header>
       <nav>
         <img src="images/pg.png" class="pg" />
-        <img src="images/login.png" class="signup-icon">
-
-        <h4>Sign up</h4>
-        <h4>Login</h4>
+<img src="images/login.png" class="signup-icon" onclick="openSignForm()">
+        <h4 onclick="openSignForm()">Sign up</h4>
+        <h4 onclick="openLogForm()">Login</h4>
       </nav>
     </header>
     <h4 class="grey-home"><span>Home</span> / Banglore</h4>
@@ -88,5 +87,41 @@
 
       <div class="grey">venky@copyright reserved 2022</div>
     </footer>
+    
+    <!-- it is sign up form -->
+    <form action="" id="mySignForm" class="sign-up">
+      <h1 id="signup-heading"
+      style="
+        display: inline-block;
+        margin-right: 220px;
+        margin-bottom: 12px;
+        margin-top: 2px;
+    ">Sign-up</h1>
+      <span class ="wrong-btn" onclick="closeSignForm()">&times;</span>
+      <input type="text" placeholder="Enter First Name" required class="input">
+      <input type="text" placeholder="Enter Last Name" required class="input">
+      <input type="email" placeholder="Enter Email" required class="input">
+      <input type="password" placeholder="Enter Password" required class="input">
+      <button class="create-btn">Create Account</button><br>
+      <button class="close-btn" onclick="closeSignForm()" >Close</button>
+      
+          </form>
+
+          <!-- it is login form -->
+          <div class="form-popup" id="myLogForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+          <span class="wrong-btn" onclick="closeLogForm()">&times;</span>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeLogForm()">Close</button>
+            </form>
+          </div>
+    <script src="script.js"></script>
   </body>
 </html>
