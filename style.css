@@ -36,7 +36,7 @@ nav h4{
     width: 100%;
     height: 86vh;
     flex-direction: column;
-    background-image: url("images/people2.webp");
+    background-image: url("images/bg.jpg");
     background-position: center;
     color: rgb(62, 200, 88);
     /* margin-top: 70px; */
@@ -46,11 +46,11 @@ nav h4{
 }
 
 .search-icon{
-    width: 30px;
-    border-radius: 16px;
+    width: 33px;
+    border-radius: 4px;
     position: absolute;
-    top: 60%;
-    right: 29%;
+    top: 59%;
+    right: 28.5%;
     cursor: pointer;
 }
 .bg input{
@@ -197,6 +197,20 @@ margin-right: 30px;
 
 /* these are signup styles */
 /* 💗💞💖 */
+.signup-container,.login-container {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #959191;
+    display: none;
+    z-index: 2;
+    filter: opacity(.9);
+}
+
+
+
 #signp-heading{
     
         display: inline-block;
@@ -216,7 +230,7 @@ margin-right: 30px;
     bottom: 2%;
     right: 30%;
     left: 30%;
-    z-index: 2;
+    z-index: 3;
     border: 2px solid red;
     padding: 10px 20px ;
     border-radius: 8px;
@@ -258,80 +272,16 @@ margin-right: 30px;
 /* these are login styles */
 /* 💚💛 */
 
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
-
-/* The popup form - hidden by default */
-.form-popup {
-  display:none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 4px solid #b71717;
-  z-index: 3;
-  border-radius: 8px;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-.form-container .wrong-btn{
-    font-size: 40px;
-    cursor: pointer;
-}
-.form-container h1{
+.login-container .login{
+    position:fixed;
+    z-index: 4;
     display: inline;
-    margin-right: 180px;
+    border: 4px solid pink;
+    min-height:70vh ;
+    min-width: 40vw;
+    border-radius: 8px;
+    margin: 10% 24%;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right,green,orange);
+
 }
